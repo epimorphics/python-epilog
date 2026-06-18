@@ -1,15 +1,15 @@
-# Epilog extends the standard Python logging module.
+# Python Epilog.
 
-Epilog provides the following additional features:
-* New log level "NOTICE" as per Syslog standard.
+Epilog provides the following additional features over the core logging module:
+* New log level `NOTICE` as per Syslog standard.
 * Custom timestamp formatting (defaulting to ISO 8601 in UTC)
 * Support for JSON and text formatted logs
 
 Environment variables:
-* `LOG_LEVEL:` Set the logging level (default: INFO)
-* `LOG_FORMAT:` Set the logging format (json or text, default: text if stdout is a terminal, otherwise json)
-* `LOG_TIMESTAMP_FORMAT:` Set the timestamp format (default: ISO 8601 in UTC)
-* `LOG_TIMESTAMP_FIELD:` Set the timestamp field name in JSON logs (default: timestamp)
+* `LOG_LEVEL`: Set the logging level (default: INFO)
+* `LOG_FORMAT`: Set the logging format (json or text, default: text if stdout is a terminal, otherwise json)
+* `LOG_TIMESTAMP_FORMAT`: Set the timestamp format (default: ISO 8601 in UTC)
+* `LOG_TIMESTAMP_FIELD`: Set the timestamp field name in JSON logs (default: timestamp)
 
 Usage:
 ```
