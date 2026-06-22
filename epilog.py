@@ -78,7 +78,7 @@ class EpiLog(logging.Logger):
       self._format = os.environ.get('LOG_FORMAT', 'text' if sys.stdout.isatty() else 'json').lower()
       if self._format == 'json':
          self._handler.setFormatter(self.JsonFormatter(fmt=fmt, rename_fields=rename_fields, datefmt=os.environ.get('LOG_TIMESTAMP_FORMAT')))
-      elif os.environ.get('LOG_FORMAT', '').lower() == 'text' or sys.stdout.isatty():
+      elif:
          self._handler.setFormatter(self.TextFormatter(fmt, os.environ.get('LOG_TIMESTAMP_FORMAT', '%Y-%b-%d %H:%M:%S')))
 
       self.addHandler(self._handler)
